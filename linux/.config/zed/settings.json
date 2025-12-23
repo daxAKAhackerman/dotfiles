@@ -1,0 +1,150 @@
+// Zed settings
+//
+// For information on how to configure Zed, see the Zed
+// documentation: https://zed.dev/docs/configuring-zed
+//
+// To see all of Zed's default settings without changing your
+// custom settings, run `zed: open default settings` from the
+// command palette (cmd-shift-p / ctrl-shift-p)
+{
+  "features": {
+    "edit_prediction_provider": "copilot",
+  },
+  "disable_ai": false,
+  "show_edit_predictions": true,
+  "autosave": "off",
+  "vim_mode": true,
+  "relative_line_numbers": "enabled",
+  "format_on_save": "on",
+  "collaboration_panel": {
+    "button": false,
+  },
+  "telemetry": {
+    "metrics": false,
+    "diagnostics": false,
+  },
+  "soft_wrap": "none",
+  "ui_font_size": 16,
+  "buffer_font_size": 14,
+  "ensure_final_newline_on_save": true,
+  "theme": {
+    "mode": "system",
+    "light": "One Light",
+    "dark": "One Dark",
+  },
+  "file_types": {
+    "TypeScript": ["**/*.ts"],
+  },
+  "lsp": {
+    "ruff": {
+      "initialization_options": {
+        "settings": {
+          "lineLength": 160,
+          "lint": {
+            "extendSelect": ["I"],
+          },
+        },
+      },
+    },
+    "pyright": {
+      "settings": {
+        "python": {
+          "pythonPath": ".venv/bin/python",
+        },
+      },
+    },
+    "yaml-language-server": {
+      "settings": {
+        "yaml": {
+          "customTags": [
+            "!And scalar",
+            "!And mapping",
+            "!And sequence",
+            "!If scalar",
+            "!If mapping",
+            "!If sequence",
+            "!Not scalar",
+            "!Not mapping",
+            "!Not sequence",
+            "!Equals scalar",
+            "!Equals mapping",
+            "!Equals sequence",
+            "!Or scalar",
+            "!Or mapping",
+            "!Or sequence",
+            "!FindInMap scalar",
+            "!FindInMap mapping",
+            "!FindInMap sequence",
+            "!Base64 scalar",
+            "!Base64 mapping",
+            "!Base64 sequence",
+            "!Cidr scalar",
+            "!Cidr mapping",
+            "!Cidr sequence",
+            "!Ref scalar",
+            "!Ref mapping",
+            "!Ref sequence",
+            "!Sub scalar",
+            "!Sub mapping",
+            "!Sub sequence",
+            "!GetAtt scalar",
+            "!GetAtt mapping",
+            "!GetAtt sequence",
+            "!GetAZs scalar",
+            "!GetAZs mapping",
+            "!GetAZs sequence",
+            "!ImportValue scalar",
+            "!ImportValue mapping",
+            "!ImportValue sequence",
+            "!Select scalar",
+            "!Select mapping",
+            "!Select sequence",
+            "!Split scalar",
+            "!Split mapping",
+            "!Split sequence",
+            "!Join scalar",
+            "!Join mapping",
+            "!Join sequence",
+            "!Condition scalar",
+            "!Condition mapping",
+            "!Condition sequence",
+          ],
+        },
+      },
+    },
+  },
+  "languages": {
+    "Python": {
+      "language_servers": ["ruff", "pyright"],
+      "formatter": [
+        { "code_action": "source.organizeImports.ruff" },
+        { "code_action": "source.fixAll.ruff" },
+        {
+          "language_server": {
+            "name": "ruff",
+          },
+        },
+      ],
+    },
+    "TypeScript": {
+      "tab_size": 2,
+      "format_on_save": "off",
+    },
+    "YAML": {
+      "format_on_save": "off",
+    },
+    "Markdown": {
+      "soft_wrap": "editor_width",
+    },
+  },
+  "terminal": {
+    "detect_venv": "off",
+    "font_family": "FiraCode Nerd Font",
+    "shell": {
+      "with_arguments": {
+        "program": "/usr/bin/tmux",
+        "args": ["new-session", "-A", "-s", "main"],
+      },
+    },
+  },
+}
