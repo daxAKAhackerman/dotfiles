@@ -21,6 +21,12 @@
     },
   },
   {
+    "context": "Workspace",
+    "bindings": {
+      "ctrl-w": null,
+    },
+  },
+  {
     "context": "Pane",
     "bindings": {
       "ctrl-w": null,
