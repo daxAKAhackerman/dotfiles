@@ -31,9 +31,7 @@
     "dark": "Tokyo Night",
   },
   "file_types": {
-    "TypeScript": [
-      "**/*.ts"
-    ],
+    "TypeScript": ["**/*.ts"],
   },
   "lsp": {
     "ruff": {
@@ -41,9 +39,7 @@
         "settings": {
           "lineLength": 160,
           "lint": {
-            "extendSelect": [
-              "I"
-            ],
+            "extendSelect": ["I"],
           },
         },
       },
@@ -117,16 +113,13 @@
   },
   "languages": {
     "Python": {
-      "language_servers": [
-        "ruff",
-        "pyright"
-      ],
+      "language_servers": ["ruff", "pyright"],
       "formatter": [
         {
-          "code_action": "source.organizeImports.ruff"
+          "code_action": "source.organizeImports.ruff",
         },
         {
-          "code_action": "source.fixAll.ruff"
+          "code_action": "source.fixAll.ruff",
         },
         {
           "language_server": {
@@ -152,12 +145,7 @@
     "shell": {
       "with_arguments": {
         "program": "tmux",
-        "args": [
-          "new-session",
-          "-A",
-          "-s",
-          "main"
-        ],
+        "args": ["new-session", "-A", "-s", "main"],
       },
     },
   },
