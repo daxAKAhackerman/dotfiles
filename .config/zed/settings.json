@@ -8,11 +8,8 @@
 // command palette (cmd-shift-p / ctrl-shift-p)
 {
   "vertical_scroll_margin": 8.0,
-  "features": {
-    "edit_prediction_provider": "copilot",
-  },
   "disable_ai": true,
-  "show_edit_predictions": true,
+  "show_edit_predictions": false,
   "autosave": "off",
   "vim_mode": true,
   "relative_line_numbers": "enabled",
@@ -34,7 +31,9 @@
     "dark": "Tokyo Night",
   },
   "file_types": {
-    "TypeScript": ["**/*.ts"],
+    "TypeScript": [
+      "**/*.ts"
+    ],
   },
   "lsp": {
     "ruff": {
@@ -42,7 +41,9 @@
         "settings": {
           "lineLength": 160,
           "lint": {
-            "extendSelect": ["I"],
+            "extendSelect": [
+              "I"
+            ],
           },
         },
       },
@@ -116,10 +117,17 @@
   },
   "languages": {
     "Python": {
-      "language_servers": ["ruff", "pyright"],
+      "language_servers": [
+        "ruff",
+        "pyright"
+      ],
       "formatter": [
-        { "code_action": "source.organizeImports.ruff" },
-        { "code_action": "source.fixAll.ruff" },
+        {
+          "code_action": "source.organizeImports.ruff"
+        },
+        {
+          "code_action": "source.fixAll.ruff"
+        },
         {
           "language_server": {
             "name": "ruff",
@@ -143,8 +151,13 @@
     "font_family": "FiraCode Nerd Font",
     "shell": {
       "with_arguments": {
-        "program": "/usr/bin/tmux",
-        "args": ["new-session", "-A", "-s", "main"],
+        "program": "tmux",
+        "args": [
+          "new-session",
+          "-A",
+          "-s",
+          "main"
+        ],
       },
     },
   },
