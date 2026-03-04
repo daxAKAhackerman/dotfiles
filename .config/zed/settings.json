@@ -7,6 +7,10 @@
 // custom settings, run `zed: open default settings` from the
 // command palette (cmd-shift-p / ctrl-shift-p)
 {
+  "tabs": {
+    "file_icons": true
+  },
+  "icon_theme": "Catppuccin Mocha",
   "vertical_scroll_margin": 8.0,
   "disable_ai": true,
   "show_edit_predictions": false,
@@ -44,7 +48,7 @@
         },
       },
     },
-    "pyright": {
+    "basedpyright": {
       "settings": {
         "python": {
           "pythonPath": ".venv/bin/python",

@@ -3,7 +3,7 @@
 // For information on binding keys, see the Zed
 // documentation: https://zed.dev/docs/key-bindings
 //
-// To see the default key bindings run `zed: open default keymap`
+// To see the default key bindings run zed: open default keymap
 // from the command palette.
 [
   {
@@ -21,15 +21,18 @@
     },
   },
   {
-    "context": "Workspace",
+    "context": "Editor",
     "bindings": {
       "ctrl-w": null,
     },
   },
   {
-    "context": "Pane",
     "bindings": {
-      "ctrl-w": null,
+      "cmd-p": [
+        // Or `ctrl-p`
+        "task::Spawn",
+        { "task_name": "Television File Finder", "reveal_target": "center" },
+      ],
     },
   },
 ]
