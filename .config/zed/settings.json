@@ -8,7 +8,7 @@
 // command palette (cmd-shift-p / ctrl-shift-p)
 {
   "tabs": {
-    "file_icons": true
+    "file_icons": true,
   },
   "icon_theme": "Catppuccin Mocha",
   "vertical_scroll_margin": 8.0,
@@ -17,7 +17,7 @@
   "autosave": "off",
   "vim_mode": true,
   "relative_line_numbers": "enabled",
-  "format_on_save": "on",
+  "format_on_save": "off",
   "collaboration_panel": {
     "button": false,
   },
