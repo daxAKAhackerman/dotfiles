@@ -31,7 +31,7 @@
   "ensure_final_newline_on_save": true,
   "theme": {
     "mode": "system",
-    "light": "One Light",
+    "light": "Tokyo Night Light",
     "dark": "Tokyo Night",
   },
   "file_types": {
