@@ -7,17 +7,29 @@
 // custom settings, run `zed: open default settings` from the
 // command palette (cmd-shift-p / ctrl-shift-p)
 {
+  "agent": {
+    "default_model": {
+      "provider": "copilot_chat",
+      "model": "claude-sonnet-4.5",
+      "enable_thinking": false
+    },
+    "favorite_models": [],
+    "model_parameters": []
+  },
+  "edit_predictions": {
+    "provider": null
+  },
   "tabs": {
     "file_icons": true,
   },
   "icon_theme": "Catppuccin Mocha",
   "vertical_scroll_margin": 8.0,
-  "disable_ai": true,
+  "disable_ai": false,
   "show_edit_predictions": false,
   "autosave": "off",
   "vim_mode": true,
   "relative_line_numbers": "enabled",
-  "format_on_save": "off",
+  "format_on_save": "on",
   "collaboration_panel": {
     "button": false,
   },
