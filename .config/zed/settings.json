@@ -7,17 +7,22 @@
 // custom settings, run `zed: open default settings` from the
 // command palette (cmd-shift-p / ctrl-shift-p)
 {
+  "agent_servers": {
+    "claude-acp": {
+      "type": "registry",
+    },
+  },
   "agent": {
     "default_model": {
       "provider": "copilot_chat",
       "model": "claude-sonnet-4.5",
-      "enable_thinking": false
+      "enable_thinking": true,
     },
     "favorite_models": [],
-    "model_parameters": []
+    "model_parameters": [],
   },
   "edit_predictions": {
-    "provider": null
+    "provider": null,
   },
   "tabs": {
     "file_icons": true,
@@ -159,10 +164,7 @@
     "detect_venv": "off",
     "font_family": "FiraCode Nerd Font",
     "shell": {
-      "with_arguments": {
-        "program": "tmux",
-        "args": ["new-session", "-A", "-s", "main"],
-      },
+      "program": "/opt/dotfiles/zed_terminal_shell.sh",
     },
   },
 }

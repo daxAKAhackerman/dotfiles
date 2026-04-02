@@ -131,6 +131,7 @@ if [[ $(uname) == "Darwin" ]]; then
   export AWS_PROFILE=poka-sdegrace-us-east-1
   export AWS_DEFAULT_REGION=us-east-1
   export PS1='\[$(tput bold)\]\[\033[38;5;10m\]\u\[$(tput sgr0)\]@\[$(tput sgr0)\]\[$(tput bold)\]\[\033[38;5;11m\]$AWS_PROFILE\[$(tput sgr0)\]:\[$(tput sgr0)\]\[\033[38;5;14m\]\w\[$(tput sgr0)\]\\$ \[$(tput sgr0)\]'
+  export PATH="$HOME/.local/bin:$PATH"
 
   GPG_TTY="$(tty)"
   export GPG_TTY
