@@ -150,4 +150,5 @@ else
   export TONCCODE=/opt/tonc-code
 
   export PATH="$PATH:/opt/nvim-linux-x86_64/bin"
+  export PATH="$PATH:/home/dax/.local/zed.app/bin:/home/dax/.local/kitty.app/bin"
 fi
