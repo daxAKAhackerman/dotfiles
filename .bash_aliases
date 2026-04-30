@@ -37,6 +37,8 @@ if [[ "$(uname)" == "Darwin" ]]; then
 
     component-service-cli component batch-update --type "$type" && component-service-cli --format pretty --select component_id,version,branch component list --type "$type" | grep -v "$version"
   }
+
+  alias languagetool='/opt/homebrew/opt/openjdk/bin/java -jar /opt/languagetool/LanguageTool-6.6/languagetool.jar'
 else
   alias vba='/opt/visualboyadvance-m/build/visualboyadvance-m'
 
