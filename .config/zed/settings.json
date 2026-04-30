@@ -26,8 +26,8 @@
     "dock": "right",
     "default_model": {
       "provider": "copilot_chat",
-      "model": "claude-sonnet-4.5",
-      "enable_thinking": true,
+      "model": "gpt-4.1",
+      "enable_thinking": false,
     },
     "favorite_models": [],
     "model_parameters": [],
