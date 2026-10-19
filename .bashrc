@@ -144,6 +144,7 @@ if [[ $(uname) == "Darwin" ]]; then
   if command -v tmux >/dev/null && [[ "$TERM" == "xterm-kitty" ]]; then
     tmux new-session -A -s main
   fi
+  export PATH="$PATH:/opt/nvim-macos-arm64/bin"
 else
   export DEVKITPRO=/opt/devkitpro
   export DEVKITARM=${DEVKITPRO}/devkitARM
@@ -153,6 +154,9 @@ else
   export PATH="$PATH:/home/dax/.local/zed.app/bin:/home/dax/.local/kitty.app/bin:/usr/local/go/bin"
   export PATH="$PATH:$HOME/.dotnet"
 fi
+
+
+
 
 
 

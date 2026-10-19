@@ -42,6 +42,21 @@
     "TypeScript": ["**/*.ts"],
   },
   "lsp": {
+    "vtsls": {
+      "settings": {
+        "typescript": {
+          "updateImportsOnFileMove": {
+            "enabled": "never"
+          }
+        },
+        "javascript": {
+          "updateImportsOnFileMove": {
+            "enabled": "never"
+          }
+        }
+      },
+      "enable_lsp_tasks": true
+    },
     "ruff": {
       "initialization_options": {
         "settings": {
