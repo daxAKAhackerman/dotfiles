@@ -39,6 +39,12 @@ vim.api.nvim_create_autocmd("VimEnter", {
       "30%",
       "-d",
     })
+
+    vim.fn.system({
+      "tmux",
+      "resize-pane",
+      "-Z",
+    })
   end,
 })
 
@@ -53,6 +59,12 @@ vim.api.nvim_create_autocmd("VimLeavePre", {
       "set-option",
       "automatic-rename",
       "on",
+    })
+
+    vim.fn.system({
+      "tmux",
+      "kill-pane",
+      "-a",
     })
   end,
 })
