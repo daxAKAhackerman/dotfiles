@@ -25,6 +25,17 @@ vim.api.nvim_create_autocmd("VimEnter", {
       return
     end
 
+    local panes = vim.fn.system({
+      "tmux",
+      "display-message",
+      "-p",
+      "#{window_panes}",
+    })
+
+    if tonumber(vim.trim(panes)) ~= 1 then
+      return
+    end
+
     vim.fn.system({
       "tmux",
       "rename-window",
@@ -60,6 +71,17 @@ vim.api.nvim_create_autocmd("VimLeavePre", {
       "automatic-rename",
       "on",
     })
+
+    local index = vim.fn.system({
+      "tmux",
+      "display-message",
+      "-p",
+      "#{pane_index}",
+    })
+
+    if tonumber(vim.trim(index)) ~= 0 then
+      return
+    end
 
     vim.fn.system({
       "tmux",
