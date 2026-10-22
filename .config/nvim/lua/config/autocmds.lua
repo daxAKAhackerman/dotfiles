@@ -20,7 +20,7 @@ vim.api.nvim_create_autocmd("VimEnter", {
       root = vim.fn.getcwd()
     end
 
-    local name = "LazyVim: " .. vim.fn.fnamemodify(root, ":t")
+    local name = "Neovim: " .. vim.fn.fnamemodify(root, ":t")
     if name == "" then
       return
     end
