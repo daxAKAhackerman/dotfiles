@@ -6,6 +6,9 @@ return {
         yamlls = {
           settings = {
             yaml = {
+              format = {
+                enable = false,
+              },
               customTags = {
                 "!And scalar",
                 "!And mapping",
