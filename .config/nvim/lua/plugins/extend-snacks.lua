@@ -11,6 +11,10 @@ return {
             ignored = true,
           },
         },
+        win = {
+          input = { keys = { ["<a-i>"] = false } },
+          list = { keys = { ["<a-i>"] = false } },
+        },
       },
     },
     keys = {
