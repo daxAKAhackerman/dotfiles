@@ -16,28 +16,28 @@ return {
     },
     keys = {
       {
-        "<A-n>",
+        "<A-Left>",
         function()
           require("smart-splits").move_cursor_left()
         end,
         desc = "Navigate left",
       },
       {
-        "<A-u>",
+        "<A-Up>",
         function()
           require("smart-splits").move_cursor_up()
         end,
         desc = "Navigate up",
       },
       {
-        "<A-i>",
+        "<A-Right>",
         function()
           require("smart-splits").move_cursor_right()
         end,
         desc = "Navigate right",
       },
       {
-        "<A-e>",
+        "<A-Down>",
         function()
           require("smart-splits").move_cursor_down()
         end,

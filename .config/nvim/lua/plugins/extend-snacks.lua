@@ -9,15 +9,17 @@ return {
           explorer = {
             hidden = true,
             ignored = true,
-            win = {
-              list = {
-                keys = {
-                  ["<A-i>"] = false,
-                },
-              },
-            },
           },
         },
+      },
+    },
+    keys = {
+      {
+        "<leader><space>",
+        function()
+          Snacks.picker.files({ cwd = vim.uv.cwd() })
+        end,
+        desc = "Find Files (cwd)",
       },
     },
   },

@@ -154,11 +154,3 @@ else
   export PATH="$PATH:/home/dax/.local/zed.app/bin:/home/dax/.local/kitty.app/bin:/usr/local/go/bin"
   export PATH="$PATH:$HOME/.dotnet"
 fi
-
-
-
-
-
-
-
-
