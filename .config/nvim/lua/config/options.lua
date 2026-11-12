@@ -10,3 +10,5 @@ opt.sidescrolloff = 8
 
 -- Zed: soft_wrap = "none"
 opt.wrap = false
+
+opt.spell = false

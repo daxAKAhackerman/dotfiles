@@ -9,6 +9,8 @@
 
 -- Automatically rename the tmux window to the project root
 
+vim.api.nvim_del_augroup_by_name("lazyvim_wrap_spell")
+
 vim.api.nvim_create_autocmd("VimEnter", {
   callback = function()
     if not vim.env.TMUX then
