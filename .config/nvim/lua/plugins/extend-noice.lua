@@ -1,11 +1,9 @@
 return {
-  {
-    "folke/noice.nvim",
-    opts = {
-      lsp = {
-        progress = {
-          enabled = false,
-        },
+  "folke/noice.nvim",
+  opts = {
+    lsp = {
+      progress = {
+        enabled = false,
       },
     },
   },
