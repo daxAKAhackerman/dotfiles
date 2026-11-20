@@ -1,6 +1,7 @@
 return {
   "folke/snacks.nvim",
   opts = {
+    scroll = { enabled = false },
     picker = {
       sources = {
         files = { hidden = true, ignored = false, exclude = { ".venv", "cdk.out", "node_modules" } },
